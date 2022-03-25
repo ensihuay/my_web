@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Our web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="{% static 'main/css/app.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'main/css/icons.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'main/css/global.css' %}" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div class="mt-5 mb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="text-center">
+
+                    <h3 class="mt-4">Web</h3>
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <div class="text-center mt-3 pl-1 pr-1">
+                                <div class="avatar-sm m-auto">
+                                            <span class="avatar-title bg-primary-lighten rounded-circle">
+                                                <i class="mdi mdi-login text-primary font-24"></i>
+                                            </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center mt-3 pl-1 pr-1">
+                                <div class="avatar-sm m-auto">
+                                            <span class="avatar-title bg-primary-lighten rounded-circle">
+                                                <i class="mdi mdi-arrow-right text-primary font-24"></i>
+                                            </span>
+                                </div>
+                                <h5 class="text-uppercase"> Se connecter</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center mt-3 pl-1 pr-1">
+                                <div class="avatar-sm m-auto">
+                                            <span class="avatar-title bg-primary-lighten rounded-circle">
+                                                <i class="mdi mdi-search-web text-primary font-24"></i>
+                                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="{% static 'main/js/vendor.min.js' %}"></script>
+<script src="{% static 'main/js/app.min.js' %}"></script>
+</body>
+</html>
