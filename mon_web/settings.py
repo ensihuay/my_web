@@ -4,6 +4,8 @@ from pathlib import Path
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from django.contrib import staticfiles
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -116,6 +118,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Static
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'), # The static files are in the folder `static` in the project folder.
-)
+STATIC_ROOT = 'static'
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'static'), # The static files are in the folder `static` in the project folder.
+# )
+
+
